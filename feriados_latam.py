@@ -201,9 +201,14 @@ class FeriadosLatam:
 
         lista = [
             (1, 1),
-            j_santo,
-            v_santo,
-            d_resu,
+            # Jueves Santo
+            self.date_format(self.jueves_santo),
+            # Viernes Santo
+            self.date_format(self.viernes_santo),
+            # Sabado Santo
+            self.date_format(self.sabado_santo),
+            # Domingo de Resurrecion / Pascua
+            self.date_format(self.easter),
             (5, 1),
             (7, 19),
             (9, 14),
@@ -215,28 +220,38 @@ class FeriadosLatam:
         return lista
 
     def venezuela(self):
-        l_carna = self.date_format(self.lunes_carnaval)
-        m_carna = self.date_format(self.martes_carnaval)
-        j_santo = self.date_format(self.jueves_santo)
-        v_santo = self.date_format(self.viernes_santo)
-        s_santo = self.date_format(self.sabado_santo)
-        d_resu = self.date_format(self.easter)
-
         lista = [
+            # Primero de Enero
             (1, 1),
-            l_carna,
-            m_carna,
-            j_santo,
-            v_santo,
-            d_resu,
+            # Lunes de carnaval
+            self.date_format(self.lunes_carnaval),
+            # Martes de carnaval
+            self.date_format(self.martes_carnaval),
+            # Jueves Santo
+            self.date_format(self.jueves_santo),
+            # Viernes Santo
+            self.date_format(self.viernes_santo),
+            # Sabado Santo
+            self.date_format(self.sabado_santo),
+            # Domingo de Resurrecion / Pascua
+            self.date_format(self.easter),
+            # Firma de acta de independencia
             (4, 19),
+            # Dia del trabajador
             (5, 1),
+            # Batalla de Carabobo
             (6, 24),
+            # Declaracion de la independencia
             (7, 5),
+            # Natalicio del Libertador
             (7, 24),
+            # Dia de la resistencia indigena
             (10, 12),
+            # Noche Buena
             (12, 24),
+            # Navidad
             (12, 25),
-            (12, 31),
+            # Fin de año
+            (12, 31)
         ]
         return lista
