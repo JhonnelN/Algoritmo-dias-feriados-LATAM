@@ -255,3 +255,6 @@ class FeriadosLatam:
             (12, 31)
         ]
         return lista
+
+if __name__ == "__main__":
+    print("holis")
