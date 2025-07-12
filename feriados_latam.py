@@ -257,4 +257,10 @@ class FeriadosLatam:
         return lista
 
 if __name__ == "__main__":
-    print("holis")
+    feriados = FeriadosLatam()
+    print("Feriados en México:", feriados.mexico())
+    print("Feriados en Colombia:", feriados.colombia())
+    print("Feriados en El Salvador:", feriados.salvador())
+    print("Feriados en Honduras:", feriados.honduras())
+    print("Feriados en Nicaragua:", feriados.nicaragua())
+    print("Feriados en Venezuela:", feriados.venezuela())
